@@ -25,10 +25,10 @@ jobs:
         docker login -u $DOCKER_USER -p $DOCKER_PASSWORD
     - name: Build image
       run: |
-        docker build -t chinicuin/docker-graphql:0.0.1 .
+        docker build -t chinicuin/docker-graphql:0.0.2 .
     - name: Push image
       run: |
-        docker push chinicuin/docker-graphql:0.0.1
+        docker push chinicuin/docker-graphql:0.0.2
     # - name: Build the Docker image
     #   run: docker build . --file Dockerfile --tag my-image-name:$(date +%s)
 
