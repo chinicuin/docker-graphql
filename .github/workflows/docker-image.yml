@@ -19,8 +19,8 @@ jobs:
         fetch-depth: 0
     - name: Docker login
       env:
-        DOCKER_USER: ${{secrets.USERNAME}}
-        DOCKER_PASSWORD: ${{secrets.PASSWORD}}
+        DOCKER_USER: ${{ secrets.USERNAME }}
+        DOCKER_PASSWORD: ${{ secrets.PASSWORD }}
       run: |
         echo "inicio de login"
         docker login -u $DOCKER_USER -p $DOCKER_PASSWORD
